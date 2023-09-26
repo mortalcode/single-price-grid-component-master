@@ -1,0 +1,150 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan2: hsla(179, 62%, 43%, 0.847);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+/* ================================================================ */
+
+body {
+  background-color: var(--LightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  min-height: 450px;
+  overflow: hidden;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 15px 25px rgba(119, 136, 153, 0.28);
+}
+/* ================================================================ */
+
+.topdiv {
+  padding: 40px;
+}
+h1 {
+  color: var(--Cyan);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+}
+h2 {
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+.special {
+  color: var(--BrightYellow);
+}
+.mainpara {
+  /* margin-bottom: 10px; */
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--GrayishBlue);
+}
+/* ================================================================ */
+
+.bottomdiv {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 50%;
+  padding: 40px;
+  background-color: var(--Cyan);
+}
+.right {
+  width: 50%;
+  padding: 40px;
+  background-color: var(--Cyan2);
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+h5 {
+  color: var(--LightGray);
+  margin-bottom: 12px;
+}
+span {
+  font-size: 26px;
+}
+h4 {
+  color: var(--LightGray);
+  font-size: 14px;
+  font-weight: 200;
+}
+p {
+  color: var(--LightGray);
+  font-size: 13px;
+  line-height: 20px;
+  margin-right: 50px;
+}
+
+button {
+  background-color: var(--BrightYellow);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  padding: 15px 85px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 26px;
+  text-wrap: nowrap;
+  box-shadow: 0px 5px 5px rgba(7, 7, 8, 0.244);
+  font-family: "Karla", sans-serif;
+  cursor: auto;
+}
+
+/* ================================================================*/
+
+@media (max-width: 675px) {
+  body {
+    height: 110vh;
+    padding: 8vw;
+  }
+  main {
+    height: 95vh;
+    width: 100%;
+    /* padding: -20px; */
+  }
+
+  .bottomdiv {
+    width: 300vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    width: 85vw;
+  }
+  h2 {
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .mainpara {
+    line-height: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
